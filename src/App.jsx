@@ -34,7 +34,7 @@ function App() {
 
     try {
       const ai = await requestToGroq(inputValue, { language: 'ID' });
-      setData("Haa?");
+      setData(ai);
     } catch (error) {
       console.error('Error fetching data:', error);
       alert('Terjadi kesalahan saat memproses permintaan Anda.');

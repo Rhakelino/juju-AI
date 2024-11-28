@@ -59,7 +59,7 @@ function App() {
           className="text-4xl text-white font-bold text-center mb-4"
           data-aos="fade-down"
           data-aos-duration="1000"
-        >Juju AI</h1>
+        >Juju AI (beta)</h1>
         <input
           type="text"
           className="w-full py-2 px-4 rounded-full bg-neutral-700 text-white mb-3 placeholder:opacity-50"

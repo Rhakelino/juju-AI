@@ -341,10 +341,10 @@ function App() {
       )}
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col w-full">
+      <div className="flex-1 flex flex-col w-full relative">
         {/* Messages Container */}
         <div 
-          className={`flex-1 overflow-y-auto p-4 pt-16 lg:pt-4 relative ${isDragging ? 'bg-neutral-800' : ''}`}
+          className={`flex-1 overflow-y-auto p-4 pt-16 lg:pt-4 pb-32 relative ${isDragging ? 'bg-neutral-800' : ''}`}
           onDragOver={(e) => {
             e.preventDefault();
             setIsDragging(true);
@@ -538,10 +538,10 @@ function App() {
         </div>
 
         {/* Input Container */}
-        <div className="p-4 border-t border-neutral-700">
+        <div className="fixed bottom-0 left-0 right-0 lg:left-64 bg-neutral-900 p-4 border-t border-neutral-700">
           <div className="relative max-w-4xl mx-auto px-2 lg:px-0">
             {selectedFiles.length > 0 && (
-              <div className="absolute bottom-full left-0 mb-2 p-2 bg-neutral-800 rounded-lg border border-neutral-700">
+              <div className="absolute bottom-full left-0 mb-2 p-2 bg-neutral-800 rounded-lg border border-neutral-700 w-full">
                 <div className="flex flex-wrap gap-2">
                   {selectedFiles.map((file, index) => (
                     <div key={index} className="flex items-center space-x-2 bg-neutral-700 rounded px-2 py-1">
